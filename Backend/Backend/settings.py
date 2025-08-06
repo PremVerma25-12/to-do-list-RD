@@ -23,9 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-yx=uy3yawi&-y9(5et)9@t(s*!rgb$=!j09m8z0!1(o0(%84os'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'to-do-list-rd-production.up.railway.app'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://to-do-list-rd-production.up.railway.app"
+]
+
+
 
 
 # Application definition
@@ -42,7 +52,11 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = True  # Allow all origins for CORS
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://to-do-list-rd-production.up.railway.app"
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

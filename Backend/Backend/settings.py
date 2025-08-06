@@ -28,11 +28,11 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'to-do-list-rd-production.up.railway.app'
+    'to-do-list-rd-production-6dcf.up.railway.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://to-do-list-rd-production.up.railway.app"
+    "to-do-list-rd-production-6dcf.up.railway.app"
 ]
 
 
@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "https://to-do-list-rd-production.up.railway.app"
+    "https://to-do-list-rd-production-6dcf.up.railway.app"
 ]
 
 

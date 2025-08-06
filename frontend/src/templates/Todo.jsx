@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const BASE_URL = window.location.hostname === 'localhost'
   ? 'http://127.0.0.1:8000'
-  : 'https://to-do-list-rd-production.up.railway.app';
+  : 'to-do-list-rd-production-6dcf.up.railway.app';
 
 export default function Todos() {
   const [tasks, setTasks] = useState([]);
